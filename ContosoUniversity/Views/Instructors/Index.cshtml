@@ -4,10 +4,10 @@
     ViewData["Title"] = "Instructors";
 }
 
-<h2>Instructors</h2>
+<h1>Instructor Profiles</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Add New Instructor</a>
 </p>
 <table class="table">
     <thead>
@@ -47,7 +47,7 @@
                 <td>
                     @foreach (var course in item.CourseAssignments)
                     {
-                        @course.Course.CourseID @course.Course.Title <br />
+                        @course.Course.CourseID @: @course.Course.Title <br />
                     }
                 </td>
                 <td>
